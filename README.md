@@ -20,3 +20,6 @@ tabela = pd.DataFrame(informacoes)
 print(tabela)
 ```
 ## Resultado
+
+![resultadoApi](https://github.com/user-attachments/assets/6c57fe63-9367-4998-a564-8c93ef3098fd)
+
