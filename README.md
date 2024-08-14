@@ -23,3 +23,57 @@ print(tabela)
 
 ![resultadoApi](https://github.com/user-attachments/assets/6c57fe63-9367-4998-a564-8c93ef3098fd)
 
+
+# Dia 2/7 - Desafio
+"[...]fazer a tradução de alguns atributos da API, como: name e affiliation. [...]Recomendamos tentar com a biblioteca Googletrans.
+[...]Após criar a função, faça um print para ver como estão os nomes traduzidos."
+
+## Código
+
+```
+import requests
+import pandas as pd
+from googletrans import Translator
+
+
+def traduzirColunas(lista):
+    tradutor = Translator()
+    index = 1
+    for i in lista[1:]:
+        traducao = tradutor.translate(i, 'pt')
+        tabela.rename({lista[index]: traducao.text}, axis='columns', inplace=True)
+        index += 1
+
+def traduzirLinhas(lista):
+    tradutor = Translator()
+    novaLista = []
+    index = 1
+    for i in lista:
+        traducao = tradutor.translate(i, 'pt')
+        novaLista.append(traducao.text)
+    
+    tabela['afiliação'].replace(lista, novaLista, inplace=True)
+
+url = "https://last-airbender-api.fly.dev/api/v1/characters"
+requisicao = requests.get(url)
+informacoes = requisicao.json()
+
+tabela = pd.DataFrame(informacoes)
+nomesColunas = tabela.columns.tolist()
+traduzirColunas(nomesColunas)
+
+listaAfiliacao = tabela['afiliação'].tolist()
+
+traduzirLinhas(listaAfiliacao)
+
+tabela.head(10)
+
+```
+
+## Resultado
+Para este desafio preferi utilizar o Jupyter Notebook para visulizar melhor os dados e inclui na tradução a coluna de afiliação para que a tabela ficasse mais legível.
+O resultado final foi esta Tabela abaixo:
+![Captura de tela de 2024-08-14 16-33-19](https://github.com/user-attachments/assets/086fc1d5-a3ee-4e26-a781-c76d48e2cefb)
+
+
+Todos os passos podem ser visualizados no arquivo do Jupyter Notebook em anexo
