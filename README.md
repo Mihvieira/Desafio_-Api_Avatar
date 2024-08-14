@@ -77,3 +77,9 @@ O resultado final foi esta Tabela abaixo:
 
 
 Todos os passos podem ser visualizados no arquivo do Jupyter Notebook em anexo
+
+# Entendendo as Bibliotecas Utilizadas:
+
+* requests: Essa biblioteca é fundamental para fazer requisições HTTP. Ela permite enviar diferentes tipos de solicitações (GET, POST, PUT, DELETE) e lidar com as respostas das APIs.
+* pandas: Ideal para manipular e analisar dados estruturados. Com o pandas, você pode converter os dados da API em DataFrames, facilitando a limpeza, transformação e análise.
+* googletrans: Essa biblioteca é utilizada para traduzir textos de um idioma para outro. Ela oferece uma interface simples para realizar traduções utilizando a API do Google Translate.
