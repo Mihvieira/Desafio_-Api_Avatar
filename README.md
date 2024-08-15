@@ -78,6 +78,14 @@ O resultado final foi esta Tabela abaixo:
 
 Todos os passos podem ser visualizados no arquivo do Jupyter Notebook em anexo
 
+# Dia 3/7 - Desafio
+* Iniciar um projeto Django com o comando startproject e criar um app (aplicativo)
+* Fazer as configurações necessárias para registro do app.
+* Executar o projeto para que a página inicial do Django
+
+![Captura de tela de 2024-08-15 11-12-30](https://github.com/user-attachments/assets/026fd427-8188-41ab-8d8f-d7dff7f11906)
+
+
 # Entendendo as Bibliotecas Utilizadas:
 
 * requests: Essa biblioteca é fundamental para fazer requisições HTTP. Ela permite enviar diferentes tipos de solicitações (GET, POST, PUT, DELETE) e lidar com as respostas das APIs.
