@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar - Personagens </title>
+    <link rel="stylesheet" href="{% static '/styles/style.css'%}">
+</head>
+<body>
+   <h1>Personagens Traduzidos</h1>
+    <ul class="item_lista">
+        {% for chave, valor in personagens.items %}
+            <li class="lista">
+                <h2>{{ valor.name }}</h2>
+                <p>Aliados: {{ valor.allies }}</p>
+                <p>Inimigos {{ valor.enemies }}</p>
+                <p> FotoUrl: {{ valor.photoUrl }}</p>
+                <p>Afiliação: {{ valor.affiliation }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
