@@ -85,6 +85,15 @@ Todos os passos podem ser visualizados no arquivo do Jupyter Notebook em anexo
 
 ![Captura de tela de 2024-08-15 11-12-30](https://github.com/user-attachments/assets/026fd427-8188-41ab-8d8f-d7dff7f11906)
 
+# Dia 4/7 - Desafio
+"criar as views e alterar as rotas dentro do Django. E mostre, de forma simples, o que você obteve, numa página HTML"
+
+## Código
+Pode ser encontrado na pasta apiAvatarComDjango no repositório
+
+## Resultado
+![Captura de tela de 2024-08-16 18-51-45](https://github.com/user-attachments/assets/ee4dac3b-b56a-4026-b0b4-8761e404860c)
+
 
 # Entendendo as Bibliotecas Utilizadas:
 
