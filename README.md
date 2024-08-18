@@ -94,6 +94,11 @@ Pode ser encontrado na pasta apiAvatarComDjango no repositório
 ## Resultado
 ![Captura de tela de 2024-08-16 18-51-45](https://github.com/user-attachments/assets/ee4dac3b-b56a-4026-b0b4-8761e404860c)
 
+# Dia 5/7 - Desafio
+Desenvolver uma tabela para mostrar cada informação vinda da API utilizando Bootstrap.
+
+# Dia 6/7 - Desafio 
+gerar um ID automático com o Django. É importante deixar um número fixo para cada item, e no consumo de uma API isso é imprescindível, principalmente se a API não traz isso.
 
 # Entendendo as Bibliotecas Utilizadas:
 
