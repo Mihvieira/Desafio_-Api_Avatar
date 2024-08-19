@@ -25,8 +25,8 @@ print(tabela)
 
 
 # Dia 2/7 - Desafio
-"[...]fazer a tradução de alguns atributos da API, como: name e affiliation. [...]Recomendamos tentar com a biblioteca Googletrans.
-[...]Após criar a função, faça um print para ver como estão os nomes traduzidos."
+Fazer a tradução de alguns atributos da API, como: name e affiliation, utilizando a biblioteca Googletrans.
+Criar uma função que faça um print para ver como estão os nomes traduzidos.
 
 ## Código
 
@@ -99,6 +99,9 @@ Desenvolver uma tabela para mostrar cada informação vinda da API utilizando Bo
 
 # Dia 6/7 - Desafio 
 gerar um ID automático com o Django. É importante deixar um número fixo para cada item, e no consumo de uma API isso é imprescindível, principalmente se a API não traz isso.
+## Resultado
+![Captura de tela de 2024-08-18 22-20-06](https://github.com/user-attachments/assets/9955fc5c-0614-4810-8601-582da158ce12)
+
 
 # Entendendo as Bibliotecas Utilizadas:
 
