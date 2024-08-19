@@ -15,21 +15,27 @@
         <table class="table table-striped">
             <thead>  
                 <tr> 
-                {% for chave in chaves %}
-                    {% if chave != '_id' %}
-                        <th scope="col">{{ chave|traduzir_item }}</th>
-                    {% endif %}
-                {% endfor %}
+                    <th scope="col">Id</th>
+                    <th scope="col">Nome</th>
+                    {% for chave in chaves %}
+                        {% if chave != '_id' and chave != 'name' %}
+                            <th>{{ chave|traduzir_item }}</th>
+                        {% endif %}
+                    {% endfor %}
                 </tr>
             </thead>
             <tbody>
                 {% for chave, valor in personagens.items %}
                     <tr>
-                    {% for i in valor %}
-                        {% if i != '_id' %}
-                            <td scope="row">{{ valor|get_item:i }}</td>
-                        {% endif %}
-                    {% endfor %}
+                        <th scope="row">{{ chave }}</th>
+                        <td> {{ valor.name|traduzir_item }} </td>
+                        {% for i in valor %}
+                            {% if i == 'photoUrl'%}
+                                <td><a href="{{ valor|get_item:i }}">Link</a></td>
+                            {% elif i != '_id' and i != 'name' %}
+                                <td>{{ valor|get_item:i }}</td>
+                            {% endif %}
+                        {% endfor %}
                     </tr> 
                 {% endfor %}
             </tbody>
