@@ -102,6 +102,8 @@ gerar um ID automático com o Django. É importante deixar um número fixo para 
 ## Resultado
 ![Captura de tela de 2024-08-18 22-20-06](https://github.com/user-attachments/assets/9955fc5c-0614-4810-8601-582da158ce12)
 
+# Dia 7/7 - Desafio
+fazer uma paginação para o projeto
 
 # Entendendo as Bibliotecas Utilizadas:
 
